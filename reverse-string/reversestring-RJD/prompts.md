@@ -7,3 +7,41 @@ This page will work inverting the text inputted with the button and setting it i
 ---
 
 Use tailwind css framework for styling instead of creating a .css file
+
+---
+
+(Attach res/reverse string.png)
+Update my html to make it look a little closer to this image. Also add a button to copy the reversed String value.
+
+---
+
+keep the input placeholder to "Introduce un texto". For the thumbnail icons in the buttons use an emoji of recycle for reverse and a copy emoji for copy.
+
+---
+
+now create an .md documentation about this application
+
+---
+
+can you add unit tests for my code?
+
+---
+
+my clipboard copy test is failing. Im running my test in chrome in an OSX environment
+
+---
+
+I will remove the copy to clipboard test. My jasmine tests in my site is moving all my form to the left side. How to fix this and place it on the bottom of the site?
+
+---
+
+should my readme.md section for my html be updated with these changes?
+
+---
+
+(Attached readme.md + index.html + screenshot of the frontend)
+now the jasmine section is placed above, fix the code to set it at the bottom
+
+---
+
+update the readme with these changes

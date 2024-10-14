@@ -3,19 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inversor de texto</title>
+    <title>Reverse String</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Jasmine for Unit Testing -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.10.0/jasmine.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.10.0/jasmine.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.10.0/jasmine-html.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.10.0/boot.min.js"></script>
+    <style>
+        .jasmine_html-reporter {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
-<body class="bg-gray-100 flex items-center justify-center min-h-screen">
-    <div class="bg-white shadow-md rounded-lg p-6 w-full max-w-md text-center">
-        <h1 class="text-2xl font-bold mb-4">Inversor de texto</h1>
-        <form id="invertForm" class="flex flex-col sm:flex-row justify-center mb-4">
-            <input type="text" id="textInput" class="border border-gray-300 rounded-md p-2 mb-4 sm:mb-0 sm:mr-2 flex-grow" placeholder="Introduce un texto">
-            <button type="submit" class="bg-blue-500 text-white font-bold py-2 px-4 rounded-md hover:bg-blue-600">Invertir</button>
+<body class="bg-gray-100 flex flex-col items-center justify-center min-h-screen relative">
+
+    <!-- Main container for the app -->
+    <div class="bg-white shadow-md rounded-lg p-6 w-full max-w-md text-center mb-4">
+        <h1 class="text-3xl font-bold mb-4">Inversor de texto</h1>
+        <form id="invertForm" class="flex items-center justify-center mb-4">
+            <input type="text" id="textInput" class="border border-gray-300 rounded-md p-2 flex-grow text-lg" placeholder="Introduce un texto">
+            <button type="submit" class="bg-blue-500 text-white font-bold py-2 px-4 rounded-md hover:bg-blue-600 flex items-center ml-2">
+                Invertir 🔃
+            </button>
         </form>
-        <p class="text-lg">Texto invertido: <span id="reversedText" class="text-green-500 font-semibold"></span></p>
+        <p class="text-lg mb-4">Texto invertido: <span id="reversedText" class="text-black font-semibold"></span></p>
+        <button id="copyButton" class="bg-gray-500 text-white font-bold py-2 px-4 rounded-md hover:bg-gray-600 flex items-center mx-auto">
+            Copiar 📋
+        </button>
     </div>
 
     <script src="script.js"></script>
+    <script src="spec/scriptSpec.js"></script> <!-- Test file -->
 </body>
 </html>
